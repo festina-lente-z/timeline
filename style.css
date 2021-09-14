@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'iconfont';  /* Project id 2810639 */
+  src: url('//at.alicdn.com/t/font_2810639_9p7yxruuq5.woff2?t=1631583365960') format('woff2'),
+       url('//at.alicdn.com/t/font_2810639_9p7yxruuq5.woff?t=1631583365960') format('woff'),
+       url('//at.alicdn.com/t/font_2810639_9p7yxruuq5.ttf?t=1631583365960') format('truetype');
+}
+body {
+  background: gainsboro;
+  box-sizing: border-box;
+}
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  max-width: 66%;
+  height: 200%;
+  margin: 0 auto;
+  background: white;
+  border-radius: 8px;
+}
+.timeline {
+  max-width: 100%;
+  position: relative;
+  list-style: none;
+}
+.timeline:before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  left: 33%;
+  top: 0;
+  background: #ddd;
+}
+.timeline:after {
+  content: "";
+  clear: both;
+  display: table;
+  width: 100%;
+}
+
+.timeline-item {
+  clear: both;
+  text-align: left;
+  position: relative;
+}
+
+.timeline-date {
+  float: left;
+  width: 33%;
+  text-align: right;
+  position: relative;
+}
+
+.timeline-circle {
+  position: absolute;
+  top: 40px;
+  left: calc(33% - 14.3px);
+  height: 24px;
+  min-height: 24px;
+  width: 24px;
+  min-width: 24px;
+  border: 3px solid #ddd;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.timeline-circle--success {
+  border-color: #2ecc71;
+}
+.timeline-circle--danger {
+  border-color: #e74c3c;
+}
+.timeline-circle--warning {
+  border-color: #f1c40f;
+}
+.timeline-icon {
+  font-family: iconfont;
+  color: #ddd;
+  font-size: 22px;
+  font-weight: 900;
+  position: relative;
+  left: 1px;
+}
+.timeline-icon--success {
+  color: #2ecc71;
+}
+.timeline-icon--danger {
+  color: #e74c3c;
+}
+.timeline-icon--warning {
+  color: #f1c40f;
+}
+
+.timeline-content {
+  float: right;
+  width: 67%;
+}
